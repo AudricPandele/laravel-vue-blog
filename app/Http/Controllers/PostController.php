@@ -60,4 +60,20 @@ class PostController extends Controller
             200
         );
     }
+
+    public function update(Request $request, $id)
+    {
+        $post = Post::find($id);
+        if ($post) {
+            $post->name = $request->name;
+            $post->text = $request->text;
+            $post->save();
+        }
+        return response()->json(
+            [
+                'status' => 'success'
+            ],
+            200
+        );
+    }
 }

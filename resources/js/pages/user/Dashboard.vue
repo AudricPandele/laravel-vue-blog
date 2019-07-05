@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <postList></postList>
+    <postList v-bind:isAdmin="false"></postList>
   </div>
 </template>
 

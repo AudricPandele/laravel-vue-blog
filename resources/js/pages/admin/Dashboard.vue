@@ -8,12 +8,12 @@
         class="btn btn-outline-success"
       >Add post</router-link>
     </h1>
-    <postList></postList>
+    <postList v-bind:isAdmin="true"></postList>
   </div>
 </template>
 
 <script>
-import postList from "../../components/post-list-admin.vue";
+import postList from "../../components/post-list.vue";
 export default {
   data() {
     return {

@@ -5,18 +5,16 @@
     </div>
 
     <div v-for="post in posts" v-bind:key="post.id" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="card card-default">
-        <div class="card-header">{{post.name}}</div>
-        <div class="card-body">{{post.text}}</div>
-        <div class="card-footer text-muted">{{post.created_at}}</div>
-      </div>
+      <postItem v-bind:key="post._id" v-bind:post="post" v-bind:isAdmin="isAdmin"></postItem>
       <br />
     </div>
   </div>
 </template>
 
 <script>
+import postItem from "./post-item";
 export default {
+  props: ["isAdmin"],
   data() {
     return {
       has_error: false,
@@ -25,6 +23,9 @@ export default {
   },
   mounted() {
     this.getPosts();
+  },
+  components: {
+    postItem
   },
   methods: {
     getPosts() {
