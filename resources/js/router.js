@@ -6,6 +6,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Dashboard from './pages/user/Dashboard';
 import AdminDashboard from './pages/admin/Dashboard';
+import CreatePost from './pages/admin/CreatePost.vue';
 
 // Routes
 const routes = [
@@ -47,6 +48,18 @@ const routes = [
         path: '/admin',
         name: 'admin.dashboard',
         component: AdminDashboard,
+        meta: {
+            auth: {
+                roles: 2,
+                redirect: { name: 'login' },
+                forbiddenRedirect: '/403'
+            }
+        }
+    },
+    {
+        path: '/admin/create-post',
+        name: 'admin.create-post',
+        component: CreatePost,
         meta: {
             auth: {
                 roles: 2,

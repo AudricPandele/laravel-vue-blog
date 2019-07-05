@@ -26,6 +26,9 @@
         "vuetify": "^1.5.16"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.19",
+        "@fortawesome/free-solid-svg-icons": "^5.9.0",
+        "@fortawesome/vue-fontawesome": "^0.1.6",
         "@websanova/vue-auth": "^2.21.14-beta",
         "es6-promise": "^4.2.8",
         "vue-axios": "^2.1.4",

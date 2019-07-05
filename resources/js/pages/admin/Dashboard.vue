@@ -1,25 +1,27 @@
 <template>
-  <div class="container">
-    <div class="card card-default">
-      <div class="card-header">Admin Dashboard</div>
-      <div class="card-body">Welcome to admin dashboard</div>
-    </div>
-    <div class="card card-default">
-      <div class="card-header">Users list</div>
-      <div class="card-body">
-        <userList></userList>
-      </div>
-    </div>
+  <div class="container-fluid">
+    <h1>
+      Admin dashboard
+      <router-link
+        :to="{ name : 'admin.create-post' }"
+        :key="key"
+        class="btn btn-outline-success"
+      >Add post</router-link>
+    </h1>
+    <postList></postList>
   </div>
 </template>
+
 <script>
-import userList from "../../components/user-list.vue";
+import postList from "../../components/post-list-admin.vue";
 export default {
-  mounted() {
-    //
+  data() {
+    return {
+      //
+    };
   },
   components: {
-    userList
+    postList
   }
 };
 </script>

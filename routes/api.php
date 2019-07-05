@@ -29,4 +29,6 @@ Route::group(['middleware' => 'auth:api'], function () {
     // Posts
     Route::get('posts', 'PostController@index');
     Route::get('posts/{id}', 'PostController@show');
+    Route::delete('posts/{id}', 'PostController@delete');
+    Route::post('posts', 'PostController@add');
 });
