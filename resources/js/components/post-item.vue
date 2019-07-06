@@ -74,8 +74,9 @@ export default {
     },
 
     update: function(id) {
+      console.log(this.post);
       this.$http
-        .put("posts/" + id, this.post)
+        .put("posts/" + id, { name: this.post.name, text: this.post.text })
         .then(res => {
           this.$router.push({
             name: "admin.dashboard",

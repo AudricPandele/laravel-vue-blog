@@ -25,11 +25,12 @@ Route::group(['middleware' => 'auth:api'], function () {
     // Users
     Route::get('users', 'UserController@index')->middleware('isAdmin');
     Route::get('users/{id}', 'UserController@show')->middleware('isAdminOrSelf');
+    Route::delete('users/{id}', 'UserController@delete')->middleware('isAdmin');
 
     // Posts
     Route::get('posts', 'PostController@index');
     Route::get('posts/{id}', 'PostController@show');
-    Route::delete('posts/{id}', 'PostController@delete');
-    Route::post('posts', 'PostController@add');
-    Route::put('posts/{id}', 'PostController@update');
+    Route::delete('posts/{id}', 'PostController@delete')->middleware('isAdmin');
+    Route::post('posts', 'PostController@store')->middleware('isAdmin');
+    Route::put('posts/{id}', 'PostController@update')->middleware('isAdmin');
 });

@@ -45,7 +45,7 @@ class PostController extends Controller
         );
     }
 
-    public function add(Request $request)
+    public function store(Request $request)
     {
         $post = new Post;
         $post->name = $request->name;
@@ -57,7 +57,7 @@ class PostController extends Controller
                 'status' => 'success',
                 'post' => $post->toArray()
             ],
-            200
+            201
         );
     }
 

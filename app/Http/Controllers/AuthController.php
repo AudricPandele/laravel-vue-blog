@@ -24,6 +24,9 @@ class AuthController extends Controller
         $user = new User;
         $user->name = $request->name;
         $user->email = $request->email;
+        if (isset($request->role)) {
+            $user->role = $request->role;
+        }
         $user->password = bcrypt($request->password);
         $user->save();
         return response()->json(['status' => 'success'], 200);

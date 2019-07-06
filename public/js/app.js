@@ -12695,7 +12695,11 @@ __webpack_require__.r(__webpack_exports__);
     update: function update(id) {
       var _this2 = this;
 
-      this.$http.put("posts/" + id, this.post).then(function (res) {
+      console.log(this.post);
+      this.$http.put("posts/" + id, {
+        name: this.post.name,
+        text: this.post.text
+      }).then(function (res) {
         _this2.$router.push({
           name: "admin.dashboard",
           params: {
