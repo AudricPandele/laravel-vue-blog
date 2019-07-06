@@ -3,8 +3,9 @@
     <div class="card card-default">
       <div class="card-header">Welcome</div>
       <div class="card-body">
-        <p>American Main Barbary Coast scuttle hardtack spanker fire ship grapple jack code of conduct port. Port red ensign Shiver me timbers provost salmagundi bring a spring upon her cable pillage cog crow's nest lateen sail. Barbary Coast quarterdeck lass coffer keel hulk mizzen me square-rigged loot.</p>
-        <p>Yardarm starboard keelhaul list schooner prow booty cackle fruit gabion topmast. Plunder shrouds Nelsons folly jack Arr parley warp grog blossom ballast pressgang. Knave crack Jennys tea cup flogging log man-of-war hearties killick long clothes six pounders hulk.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec erat rhoncus, facilisis magna eget, efficitur nisi. In massa eros, dictum ut velit hendrerit, venenatis pretium libero. Curabitur pretium sagittis condimentum. Praesent finibus orci non metus pharetra, id sollicitudin urna rutrum. Donec et velit vel ex aliquam ullamcorper. Fusce elementum, quam vel bibendum malesuada, velit eros lacinia tellus, a consectetur massa purus et sapien. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tempor nec elit ut varius. Nulla facilisi.</p>
+
+        <p>Integer suscipit magna eu vestibulum efficitur. Mauris quis tellus libero. Vivamus libero sem, laoreet nec porttitor eu, eleifend suscipit ipsum. Mauris rutrum tincidunt ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut malesuada laoreet metus non tristique. Vivamus justo urna, bibendum sagittis porta sed, semper et urna. Nunc pretium tellus in tristique ultricies. Nam pulvinar feugiat metus, nec hendrerit justo pharetra eget. Quisque lorem felis, commodo eget nisi vel, molestie interdum neque.</p>
       </div>
     </div>
   </div>
