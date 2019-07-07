@@ -24,8 +24,8 @@ trait RefreshDatabase
         $database = $this->app->make('db');
 
         $this->beforeApplicationDestroyed(function () use ($database) {
-            // list all collections here
             $database->dropCollection('users');
+            $database->dropCollection('posts');
         });
     }
 }

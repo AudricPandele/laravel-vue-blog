@@ -32,6 +32,9 @@
 
 By default, application will be served at `http://127.0.0.1:8000`
 
+Default admin user : `admin@test.com | admin`
+Default user : `user@test.com | secret`
+
 ## 🧪 Test
 
 Launch PHPUnit tests with `./vendor/bin/phpunit`
